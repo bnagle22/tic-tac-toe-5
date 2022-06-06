@@ -50,7 +50,7 @@ const reset = document.getElementById("reset")
 squares.forEach(function(i){
   i.addEventListener('click', handleClick)
   i.addEventListener('mouseover', function(e){
-    e.target.style.background = "rgb(273, 61, 0"
+    e.target.style.background = "rgb(210, 85, 143)"
   })
   i.addEventListener('mouseout', function(e){
     e.target.style.background = "rgb(196, 19, 102)"
@@ -58,10 +58,10 @@ squares.forEach(function(i){
 })
 reset.addEventListener('click', init)
 reset.addEventListener('mouseover', function(e){
-  e.target.style.backgroundColor = "rgb(273, 61, 0)"
+  e.target.style.backgroundColor = "rgb(210, 85, 143)"
 })
 reset.addEventListener('mouseout', function(e){
-  e.target.style.backgroundColor = "rgb(196, 19, 0"
+  e.target.style.backgroundColor = "rgb(196, 19, 102"
 })
 
 // Functions
