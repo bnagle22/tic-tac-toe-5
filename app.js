@@ -1,6 +1,6 @@
 // Constants
 
-winCombos = [ [0, 1, 2, 3, 4], [5, 6, 7, 8, 9], [10, 11, 12, 13, 14], [15, 16, 17, 18, 19], [20, 21, 22, 23, 24], [0, 5, 10, 15, 20], [1, 6, 11, 16, 21], [2, 7, 12, 17, 22], [3, 8, 13, 18, 23], [4, 9, 14, 19, 24], [0, 6, 12, 18, 23]]
+winCombos = [ [0, 1, 2, 3, 4], [5, 6, 7, 8, 9], [10, 11, 12, 13, 14], [15, 16, 17, 18, 19], [20, 21, 22, 23, 24], [0, 5, 10, 15, 20], [1, 6, 11, 16, 21], [2, 7, 12, 17, 22], [3, 8, 13, 18, 23], [4, 9, 14, 19, 24], [4, 8, 12, 16, 20], [0, 6, 12, 18, 24]]
 
 // Variables
 
@@ -115,11 +115,11 @@ function handleClick(event){
 
 function checkWin(){
   for(let i = 0; i < winCombos.length; i ++){
-    if(board[winCombos[i][0]] + board[[winCombos][i][1]] + board[winCombos[i][2]] + board[winCombos[i][3]] + board[winCombos[i][4]] == 5){
+    if(board[winCombos[i][0]] + board[winCombos[i][1]] + board[winCombos[i][2]] + board[winCombos[i][3]] + board[winCombos[i][4]] == 5){
       winner = 1
       renderMsg.innerText = "Player 1 (X) wins!"
     }
-    else if(board[winCombos[i][0]] + board[[winCombos][i][1]] + board[winCombos[i][2]] + board[winCombos[i][3]] + board[winCombos[i][4]] == -5){
+    else if(board[winCombos[i][0]] + board[winCombos[i][1]] + board[winCombos[i][2]] + board[winCombos[i][3]] + board[winCombos[i][4]] == -5){
       winner = -1
       renderMsg.innerText = "Player 2 (O) wins!"
     }
