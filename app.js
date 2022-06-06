@@ -95,7 +95,7 @@ function handleClick(event){
   if(winner === null && event.target.innerText === ''){
     if(turn === 1){
       event.target.style.color = 'black'
-      event.target.style.innerText = 'X'
+      event.target.innerText = 'X'
       board[event.target.id] = 1
       turn = -1
       render()
